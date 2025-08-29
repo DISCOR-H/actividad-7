@@ -1,0 +1,36 @@
+/* LocalBarberia.css */
+.datetime-button-container {
+    margin: 16px 0;
+  }
+  
+  .datetime-button {
+    --border-radius: 8px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    --background: var(--ion-color-light);
+    --color: var(--ion-color-dark);
+  }
+  
+  .datetime-modal {
+    --width: 340px;
+    --height: 400px;
+    --border-radius: 16px;
+  }
+  
+  .datetime-title {
+    font-size: 1.2em;
+    margin-bottom: 16px;
+    color: var(--ion-color-primary);
+  }
+  
+  .input-item {
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    margin: 12px 0;
+  }
+  
+  .submit-button {
+    margin-top: 24px;
+    --padding-start: 24px;
+    --padding-end: 24px;
+  }

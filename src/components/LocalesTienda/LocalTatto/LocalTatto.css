@@ -1,0 +1,16 @@
+.error-message {
+    color: red;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .datetime-button {
+    margin-left: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .data-list ion-label {
+    white-space: normal !important;
+  }

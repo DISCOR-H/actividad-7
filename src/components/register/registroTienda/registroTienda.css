@@ -1,0 +1,21 @@
+ion-grid {
+    --ion-grid-columns: 12;
+  }
+  
+  .columap {
+      display: flex;
+      flex-direction: column;
+      align-items: normal; 
+      color: #fff;
+      text-align: center;
+  }
+  
+  ion-item {
+    margin-bottom: 16px; /* Espacio entre los elementos */
+    display: block; /* Asegura que los elementos se muestren en bloque (uno debajo del otro) */
+  }
+  
+  ion-button {
+    margin-top: 16px; /* Espacio adicional antes del botón */
+  }
+  

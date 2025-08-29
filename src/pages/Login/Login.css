@@ -1,0 +1,133 @@
+/* Variables CSS */
+:root {
+    --color-primary: #2575fc; /* Color principal (azul) */
+    --color-secondary: #6a11cb; /* Color secundario (morado) */
+    --color-error: #ff4444; /* Color para mensajes de error */
+    --color-text: #ffffff; /* Color de texto principal (blanco) */
+    --color-text-light: #cccccc; /* Color de texto secundario (gris claro) */
+    --color-background: #1a1a1a; /* Color de fondo oscuro */
+    --color-card-background: #2a2a2a; /* Color de fondo de la tarjeta */
+    --border-radius: 10px; /* Radio de borde para elementos */
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    --transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Estilo para el contenedor principal */
+ion-grid {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-background); /* Fondo oscuro */
+    padding: 20px; /* Espaciado para dispositivos móviles */
+}
+
+/* Nuevo selector para centrar desde IonRow */
+ion-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Estilo para la tarjeta de login */
+.login-card {
+    max-width: 500px;
+    width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    background: var(--color-card-background); /* Fondo de la tarjeta */
+    padding: 20px;
+    transition: var(--transition);
+}
+
+/* Efecto hover para la tarjeta */
+.login-card:hover {
+    transform: translateY(-5px); /* Efecto de elevación */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+/* Espaciado entre los elementos del formulario */
+ion-item {
+    margin-bottom: 20px;
+    --border-radius: var(--border-radius);
+    --background: transparent; /* Fondo transparente */
+    --padding-start: 0; /* Eliminar padding innecesario */
+    --padding-end: 0;
+    --color: var(--color-text); /* Color del texto */
+}
+
+/* Estilo para los inputs */
+ion-input {
+    --padding-start: 10px; /* Espaciado interno */
+    --padding-end: 10px;
+    --background: #3a3a3a; /* Fondo oscuro para los inputs */
+    --border-radius: var(--border-radius);
+    --border-color: #444; /* Color del borde */
+    --border-width: 1px;
+    --border-style: solid;
+    --color: var(--color-text); /* Color del texto */
+    transition: var(--transition);
+}
+
+/* Efecto hover y focus para los inputs */
+ion-input:hover,
+ion-input:focus {
+    --border-color: var(--color-primary); /* Cambiar color del borde */
+    --background: #4a4a4a; /* Cambiar fondo al interactuar */
+}
+
+/* Estilo para el botón de inicio de sesión */
+ion-button {
+    margin-top: 20px;
+    --background: var(--color-primary);
+    --background-activated: var(--color-secondary);
+    --border-radius: var(--border-radius);
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+/* Efecto hover para el botón */
+ion-button:hover {
+    --background: var(--color-secondary); /* Cambiar color al hacer hover */
+    transform: scale(1.05); /* Efecto de escala */
+}
+
+/* Estilo para el enlace de registro */
+ion-text p {
+    color: var(--color-text-light);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+ion-text a {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+/* Efecto hover para el enlace de registro */
+ion-text a:hover {
+    color: var(--color-secondary); /* Cambiar color al hacer hover */
+}
+
+/* Estilo para el mensaje de error */
+ion-text[color="danger"] {
+    display: block;
+    margin: 10px 0;
+    font-size: 14px;
+    text-align: center;
+    color: var(--color-error); /* Usar variable para el color de error */
+}
+
+/* Responsividad para dispositivos móviles */
+@media (max-width: 576px) {
+    .login-card {
+        padding: 15px; /* Reducir padding en móviles */
+    }
+
+    ion-grid {
+        padding: 10px; /* Reducir padding en móviles */
+    }
+}

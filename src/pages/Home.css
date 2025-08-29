@@ -1,0 +1,99 @@
+/*
+  Home.css
+  Ajustado para usar el layout de Ionic, forzando el ion-grid a display: block
+  para que cada fila se muestre en su propia línea.
+*/
+
+/* Tema oscuro personalizado */
+:root {
+    --ion-color-primary: #6a1b9a;      /* Morado principal */
+    --ion-color-secondary: #03DAC6;    /* Verde-agua */
+    --ion-background-color: #121212;   /* Fondo general oscuro */
+    --ion-text-color: #ffffff;         /* Texto en blanco */
+    --ion-card-background: #1e1e1e;     /* Fondo para tarjetas */
+  }
+  
+  /* Cabecera personalizada */
+  .custom-header {
+    background-color: #1e1e1e; /* Similar a --ion-card-background */
+    color: #fff;
+  }
+  
+  /* Contenido general con padding y fondo oscuro */
+  .content-grid {
+    --background: var(--ion-background-color);
+    color: var(--ion-text-color);
+    padding: 16px;
+  }
+  
+  /* Fuerza que el ion-grid con clase "home-grid" se muestre como bloque */
+  ion-grid.home-grid {
+    display: block !important;
+  }
+  
+  /* Asegura que las filas (ion-row) permitan envolver columnas */
+  ion-row {
+    flex-wrap: wrap;
+  }
+  
+  /* Tarjeta de bienvenida (Fila 1) */
+  .welcome-card {
+    background: var(--ion-card-background);
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Logo dentro de la tarjeta de bienvenida */
+  .logo {
+    max-width: 120px;
+    margin: 20px auto 10px;
+  }
+  
+  /* Tarjetas de servicio (Fila 2: Barbería, Manicure, Tatto, etc.) */
+  .service-card {
+    background: var(--ion-card-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    margin: 8px 0;
+  }
+  
+  /* Ícono del servicio */
+  .service-icon {
+    margin-bottom: 8px;
+  }
+  
+  /* Botón "Ver más" en las tarjetas de servicio */
+  .service-button {
+    --border-radius: 20px;
+    --padding-start: 12px;
+    --padding-end: 12px;
+    margin-top: 10px;
+  }
+  
+  /* Tarjeta CTA (Fila 3: Reserva tu cita) */
+  .cta-card {
+    background: var(--ion-card-background);
+    text-align: center;
+    margin: 8px 0;
+  }
+  
+  /* Tarjeta de contacto (Fila 4: ¿Necesitas ayuda?) */
+  .contact-card {
+    background: var(--ion-card-background);
+    text-align: center;
+    margin: 8px 0;
+  }
+  
+  /* Ajuste de títulos y subtítulos */
+  ion-card-title {
+    font-size: 1.2rem;
+    color: var(--ion-color-primary);
+  }
+  
+  ion-card-subtitle {
+    color: var(--ion-color-secondary);
+  }
+  
